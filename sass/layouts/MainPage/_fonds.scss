@@ -1,0 +1,89 @@
+.fonds {
+
+	padding: 0 0 35px 0;
+
+	&__logo {
+		width: 100px;
+		height: 100%
+	}
+
+	&__title {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		margin-bottom: 35px;
+		display: inline-block;
+		text-transform: uppercase;
+		@include font(26px, 700, 1.2, 0.03em);
+		background-image: linear-gradient(to left, #26c0b4, #166c65);
+		color: transparent;
+		background-clip: text;
+
+		@include desktop {
+			@include font(46px, 700, 1.2, 0.03em);
+
+
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		list-style: none;
+
+		@include tablet {
+			gap: 15px;
+			flex-direction: row;
+		}
+
+		@include desktop {
+			gap: 25px;
+		}
+	}
+
+	&__thumb {
+		width: 100%;
+		height: 170px;
+
+		@include tablet {
+			height: 200px;
+		}
+
+		@include desktop {
+
+			height: 250px;
+
+
+		}
+	}
+
+	&__item {
+		border-radius: 10px;
+		border: 1.5px solid #166c65;
+		box-shadow: 10px 15px 10px -10px rgba(0, 0, 0, 0.5);
+
+
+		@include tablet {
+			flex-basis: calc((100% - 30px) / 3);
+		}
+
+		@include desktop {
+
+			transition: transform 0.3s ease;
+
+			&:hover,
+			&:focus {
+				transform: scale(1.03);
+			}
+		}
+
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		border-radius: 10px;
+	}
+
+	// &__link {}
+}

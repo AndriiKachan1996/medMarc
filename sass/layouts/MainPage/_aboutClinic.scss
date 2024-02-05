@@ -1,0 +1,65 @@
+.about {
+    padding: 35px 0 0 0;
+    // border: 1px solid grey;
+
+    &__title {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 35px;
+        display: inline-block;
+        text-transform: uppercase;
+        @include font(26px, 700, 1.2, 0.03em);
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
+
+        @include desktop {
+            @include font(46px, 700, 1.2, 0.03em);
+
+
+        }
+
+    }
+
+    &__wrap {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+            display: flex;
+
+        }
+    }
+
+    &__text-box {
+        @include font(16px, 400, 1.2, 0.03em);
+        font-family: "Montserrat",
+            Sans-serif;
+
+        @include desktop {
+            width: 90%;
+        }
+    }
+
+    &__text:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+
+
+    &__foto {
+        img {
+
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        @include mobileMax {
+            display: none;
+        }
+    }
+}

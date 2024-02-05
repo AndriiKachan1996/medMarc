@@ -1,0 +1,21 @@
+<svg viewBox="-7.36 -7.36 46.72 46.72" xmlns="http://www.w3.org/2000/svg">
+    <rect x="-7.36" y="-7.36" width="46.72" height="46.72" rx="23.36" fill="#00a3a4" id="SVGRepo_bgCarrier"
+        stroke-width="0" />
+    <g id="SVGRepo_iconCarrier">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 1.28
+                }
+            </style>
+        </defs>
+        <g data-name="Layer 2" id="Layer_2">
+            <path class="cls-1" d="M4 7h10v24H4zM6 1h6a4 4 0 0 1 4 4v2h0H2h0V5a4 4 0 0 1 4-4ZM4 19h10" />
+            <path class="cls-1" d="M7 10h4v6H7zM4 27h10M4 23h10M12 19h6l10 12h3M18 20v11M23 25v6" />
+        </g>
+    </g>
+</svg>

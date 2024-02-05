@@ -1,0 +1,165 @@
+.footer {
+    border-top: 2px solid #009292;
+    padding: 35px 0;
+
+    @include desktop {
+        border-top: 2px solid #009292;
+    }
+
+
+
+    &__wrap {
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+
+    &__logo {
+        width: 160px;
+        height: 160px;
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
+    }
+
+
+    &__logo-img {
+        width: 100%;
+        height: 100%
+    }
+
+    // Social
+    &__social-title {
+        @include font(14px, 900, 1.9, 0.05em);
+        color: #009292;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        @include tablet {
+            @include font(25px, 900, 1.9, 0.05em);
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-item:not(:first-child) {
+        margin-left: 18px;
+    }
+
+    &__social-link {
+        background-color: white;
+        @include size(44px, 44px);
+        box-shadow: -7px 5px 5px 0px rgba(118, 116, 116, 0.75);
+        border: 2px solid #009292;
+        fill: #009292;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: fill $duration $timing-function,
+            background $duration $timing-function,
+            box-shadow $duration $timing-function,
+            scale $duration $timing-function;
+
+        @include tablet {
+            @include size(64px, 64px);
+
+            &:hover {
+                box-shadow: rgba(102, 102, 102, 0.4) -5px 5px, rgba(102, 102, 102, 0.3) -10px 10px, rgba(102, 102, 102, 0.2) -15px 15px, rgba(102, 102, 102, 0.1) -20px 20px, rgba(102, 102, 102, 0.05) -25px 25px;
+                scale: 1.05;
+                border: 2px solid #666666;
+                fill: #666666;
+            }
+        }
+    }
+
+    &__social-icon {
+
+        @include tablet {
+            width: 35px;
+            height: 35px;
+        }
+
+    }
+
+
+    // Adress
+
+    &__address-list {
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__address-item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__address-link {
+        @include font(14px, 900, 1.9, 0.05em);
+        align-items: center;
+        color: #009292;
+        display: flex;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        transition: color $duration $timing-function;
+
+        @include tablet {
+            text-transform: uppercase;
+            @include font(18px, 900, 1.9, 0.05em);
+        }
+    }
+
+    &__address-icon {
+        fill: #009292;
+        margin-right: 10px;
+
+        @include tablet {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+// svg
+
+// .footer
+
+/* hover */
+
+@include tablet {
+
+    .footer__address-item .footer__address-link,
+    .footer__address-item .footer__address-link svg {
+        transition: color $duration $timing-function, fill $duration $timing-function;
+    }
+
+
+    .footer__address-item .footer__address-link:hover {
+        color: #666666;
+
+
+        // @include desktop {
+        //     color: #00a3a4;
+        // }
+    }
+
+    .footer__address-item .footer__address-link:hover svg {
+        fill: #666666;
+
+    }
+}

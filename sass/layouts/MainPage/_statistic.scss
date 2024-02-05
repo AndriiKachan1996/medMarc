@@ -1,0 +1,66 @@
+.statistics {
+    padding: 15px 0 0 0;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__item {
+
+        @include tablet {
+            flex-basis: calc((100% - 60px) / 4);
+        }
+    }
+
+    &__wrap {
+        padding: 10px;
+        border-bottom: 3px solid #166c65;
+
+        @include tablet {
+            border-style: solid;
+            border-width: 0 0 0 4px;
+            border-color: #166c65;
+        }
+    }
+
+    &__num {
+        @include font(30px, 500, 1.2, 0.03em);
+        text-align: center;
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        @include tablet {
+            @include font(20px, 700, 1.2, 0.03em);
+        }
+
+        @include desktop {
+            @include font(40px, 700, 1.2, 0.03em);
+        }
+    }
+
+    &__text {
+        text-transform: uppercase;
+        @include font(18px, 600, 1.2, 0.03em);
+        text-align: center;
+        color: #353f4d;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        @include tablet {
+            @include font(15px, 700, 1.2, 0.03em);
+        }
+
+        @include desktop {
+            @include font(18px, 700, 1.2, 0.03em);
+        }
+    }
+}

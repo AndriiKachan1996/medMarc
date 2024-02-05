@@ -1,0 +1,204 @@
+.menegment {
+    padding: 35px 0 0 0;
+    // border: 1px solid grey;
+
+    &__title {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 35px;
+        display: inline-block;
+        text-transform: uppercase;
+        @include font(26px, 700, 1.2, 0.03em);
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
+
+        @include desktop {
+            @include font(46px, 700, 1.2, 0.03em);
+
+
+        }
+    }
+}
+
+// person card
+.person-card {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    color: $light;
+
+    // box-shadow: 19px 20px 39px -17px rgba(0, 0, 0, 1);
+
+
+}
+
+.person-card--img {
+    @include transition;
+    position: relative;
+    width: 100%;
+    height: 555px;
+    background-size: cover;
+    background-position: center;
+}
+
+.person-card__darken {
+    @include transition;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
+    opacity: 0.6;
+}
+
+.person-card__content {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.person-card__content__name,
+.person-card__content__job,
+.person-card__content__joined {
+
+    // margin: 0 0 12px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    ;
+
+}
+
+.person-card__content__name {
+    font-size: 24px;
+    font-weight: 700;
+
+    @include desktop {
+        font-size: 28px;
+    }
+
+}
+
+.person-card__content__job {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+.person-card__content__joined {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    @include desktop {
+        font-size: 12px;
+    }
+
+
+
+}
+
+.person-card__action,
+.person-card__action--close {
+    @include transition;
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    bottom: 30px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid $light;
+    background: rgba($light, 0);
+
+    &:hover {
+        cursor: pointer;
+        background: rgba($light, 0.25);
+    }
+}
+
+.person-card__action--close {
+    opacity: 0;
+    top: 30px;
+    bottom: auto;
+}
+
+.person-card__content--hidden {
+    @include transition;
+    transition-delay: 350ms;
+    height: 0;
+    overflow: hidden;
+}
+
+.rule {
+    @include transition;
+    transition-delay: 0ms;
+    display: block;
+    height: 3px;
+    background: $light;
+    margin: 20px 0;
+    width: 0;
+}
+
+.person-card__info {
+
+    @include transition;
+    transition-delay: 0ms;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0;
+
+    @include desktop {
+        font-size: 18px;
+    }
+}
+
+// active
+.person-card.active {
+    .person-card--img {
+        filter: blur(10px);
+    }
+
+    .person-card__darken {
+        opacity: 1;
+    }
+
+    .person-card__content--hidden {
+        transition-delay: 0ms;
+        overflow: auto;
+        height: 350px;
+    }
+
+    .rule {
+        width: 100%;
+        transition-delay: 250ms;
+    }
+
+    .person-card__info {
+        opacity: 1;
+        transition-delay: 450ms;
+
+    }
+
+    .person-card__action {
+        opacity: 0;
+    }
+
+    .person-card__action--close {
+        opacity: 1;
+    }
+}

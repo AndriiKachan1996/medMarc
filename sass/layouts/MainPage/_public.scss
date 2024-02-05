@@ -1,0 +1,107 @@
+.public {
+    padding: 35px 0 0 0;
+
+    &__title {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        @include font(26px, 700, 1.2, 0.03em);
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 35px;
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
+
+        @include desktop {
+            @include font(46px, 700, 1.2, 0.03em);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        text-align: center;
+        border: 2px solid grey;
+        border-radius: 20px;
+        padding: 20px 0;
+        cursor: pointer;
+
+        @include desktop {
+            &:hover {
+                border-color: #166c65;
+            }
+        }
+
+
+        @include mobileMax {
+            box-shadow: 15px 20px 12px -15px rgba(0, 0, 0, 0.73);
+        }
+
+        @include tablet {
+            flex-basis: calc((100% - 40px) / 3);
+
+            &:hover {
+                box-shadow: 15px 20px 12px -15px rgba(0, 0, 0, 0.73);
+            }
+
+        }
+
+        transition: box-shadow $duration $timing-function,
+        border-color $duration $timing-function,
+    }
+
+    &__icon {
+        fill: #666666;
+        transition: color $duration $timing-function,
+            scale $duration $timing-function;
+        width: 75px;
+        height: 75px;
+
+        @include tablet {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__name {
+        color: #666666;
+        @include font(16px, 700, 1.2, 0.03em);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px 0;
+        text-align: center;
+
+        @include tablet {
+            @include font(15px, 700, 1.2, 0.03em);
+
+            @include desktop {
+                @include font(20px, 700, 1.2, 0.03em);
+
+            }
+
+        }
+
+    }
+}
+
+.public__item:hover svg {
+    @include desktop {
+        scale: 1.07;
+        fill: #166c65;
+    }
+
+}
+
+.public__item:hover .public__name {
+    @include desktop {
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
+    }
+}

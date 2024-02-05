@@ -1,0 +1,23 @@
+.header__icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transition: opacity $duration $timing-function;
+
+	&[aria-expanded="false"] {
+		opacity: 1;
+
+		+ .header__icon {
+			opacity: 0;
+		}
+	}
+
+	&[aria-expanded="true"] {
+		opacity: 0;
+
+		+ .header__icon {
+			opacity: 1;
+		}
+	}
+}

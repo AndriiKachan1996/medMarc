@@ -1,0 +1,151 @@
+.comforts {
+    padding: 35px 0;
+
+    &__title {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 35px;
+        display: inline-block;
+        text-transform: uppercase;
+        @include font(26px, 700, 1.2, 0.03em);
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
+
+        @include desktop {
+            @include font(46px, 700, 1.2, 0.03em);
+
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+        @include tablet {
+            gap: 15px;
+        }
+
+        @include desktop {
+            gap: 25px;
+        }
+
+        @include tablet {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__box {
+        flex-basis: calc(50% - 20px);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        transition: box-shadow $duration $timing-function;
+
+        @include mobileMax {
+            box-shadow: 10px 15px 10px -10px rgba(0, 0, 0, 0.5);
+        }
+
+
+        @include tablet {
+            &:hover {
+                box-shadow: 15px 20px 12px -15px rgba(0, 0, 0, 0.73);
+            }
+        }
+    }
+
+    &__item {
+        flex-basis: calc((100% - 10px) / 2);
+        transition: transform 0.6s ease;
+        border: 1.5px solid #666666;
+        border-radius: 10px;
+        padding: 30px 0;
+        transition: transform $duration $timing-function;
+
+        &:hover .comforts__overlay,
+        &:focus .comforts__overlay {
+            transform: translateY(0);
+        }
+
+        @include tablet {
+            border: 2px solid #666666;
+        }
+
+        @include desktop {
+            padding: 40px 0;
+        }
+
+    }
+
+
+    &__overlay {
+        @include size(100%, 100%);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #666;
+        opacity: 90%;
+        transform: translateY(100%);
+        transition: transform $duration $timing-function;
+
+        @include tablet {
+            padding: 15px;
+        }
+
+        &--description {
+            color: aliceblue;
+            font-family: "Montserrat", Sans-serif;
+            text-align: center;
+            @include font(11px, 500, 1.2, 0.03em);
+
+            @include tablet {
+                @include font(18px, 500, 1.2, 0.03em);
+            }
+
+            @include desktop {
+                @include font(18px, 900, 1.2, 0.03em);
+            }
+
+
+        }
+    }
+
+    &__icon {
+        width: 100%;
+        height: 70px;
+        fill: #666666;
+
+        @include tablet {
+            height: 93px;
+        }
+
+        @include desktop {
+            height: 135px;
+
+        }
+    }
+
+    &__name {
+        color: #666666;
+        @include font(16px, 700, 1.2, 0.03em);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px 0;
+        text-align: center;
+
+        @include tablet {
+            @include font(15px, 700, 1.2, 0.03em);
+
+            @include desktop {
+                @include font(20px, 700, 1.2, 0.03em);
+
+            }
+
+        }
+
+    }
+}

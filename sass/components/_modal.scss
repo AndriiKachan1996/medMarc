@@ -1,0 +1,194 @@
+.modal {
+  background-color: $color-white;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 479px) {
+    width: calc(100vw - 30px);
+  }
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+  &__close-button {
+    @include size(30px, 30px);
+
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: $color-white;
+    border-radius: 50%;
+    border: 1px solid $color-modal-close;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: fill $duration $timing-function;
+    &:hover,
+    &:focus {
+      fill: $color-accent;
+    }
+  }
+
+  &--x {
+    @include size(18px, 18px);
+  }
+
+  &__form {
+    padding: 40px;
+  }
+
+  &__title {
+    @include font(20px, 700, 1, 0.03);
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+
+  &__elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__elements input {
+    border: 1px solid $color-modal-close;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    width: 100%;
+    padding-left: 42px;
+    transition: border $timing-function $duration;
+    &:focus {
+      border: 1px solid $color-accent;
+    }
+    &:focus + svg {
+      fill: $color-accent;
+    }
+  }
+
+  &__elements svg {
+    @include size(18px, 18px);
+
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    transition: fill $timing-function $duration;
+  }
+
+  &__label {
+    @include font(12px, 400, 1.1, 0.01em);
+
+    color: $color-secondary-text;
+    margin-bottom: 4px;
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__coment {
+    height: 120px;
+
+    resize: none;
+    border: 1px solid $color-modal-close;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border $duration $timing-function;
+    padding: 12px 16px;
+    &:focus {
+      border: 1px solid $color-accent;
+    }
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      color: $color-secondary-text-op;
+    }
+  }
+
+  &__accept {
+    display: flex;
+    align-items: center;
+  }
+  &__accept input:focus:checked + label .modal__checkbox {
+    background: $color-accent;
+    border: none;
+  }
+  &__accept input:focus:checked + label .modal__checkbox svg {
+    display: block;
+  }
+
+  &__accept-label {
+    @include font(12px, 400, 1.2, 0.03em);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    @include desktop {
+      @include font(14px, 400, 1.7, 0.03em);
+    }
+  }
+  &__checkbox {
+    @include size(15px, 15px);
+    border: 2px solid $color-black;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    transition: background $duration $timing-function;
+  }
+
+  &__accept--blue {
+    color: $color-accent;
+    text-decoration: none;
+    position: relative;
+    margin-left: 4px;
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      right: 0;
+      background-color: $color-accent;
+      border-radius: 1px;
+    }
+  }
+
+  &__button--send {
+    @include size(200px, 50px);
+    background: $color-accent;
+    border-radius: 4px;
+    border: none;
+    color: $color-white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: $color-accent-active;
+    }
+  }
+}

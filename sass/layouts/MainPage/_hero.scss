@@ -1,0 +1,44 @@
+.hero {
+
+	// background-image: linear-gradient(to top, #000205, #3a3d3e, #757878, #b6b9b8, #fefffc),
+	// 	url(../images/HERO.jpg);
+
+	// background-color: $color-primary-background;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/HERO.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+
+	&__title {
+		padding: 140px 30px;
+		@include font(20px, 600, 1.6, 0.06em);
+		text-align: center;
+		margin: auto;
+		background-image: linear-gradient(to left, #26c0b4, #166c65);
+		color: transparent;
+		background-clip: text;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+
+		@include tablet {
+			padding: 240px 0;
+			@include font(24px, 600, 1.6, 0.06em);
+		}
+
+		@include desktop {
+			@include font(28px, 600, 1.6, 0.06em);
+
+		}
+	}
+
+}
+
+// .wrap {
+// 	background-image: linear-gradient(to top, #000205, #3a3d3e, #757878, #b6b9b8, #fefffc);
+// 	width: 100%;
+// 	height: 100%;
+// }

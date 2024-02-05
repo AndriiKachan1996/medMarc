@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="./images/logo-min.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,600&family=Borel&family=Lobster&family=Montserrat:wght@400;700&family=Neucha&family=Old+Standard+TT:wght@700&family=Preahvihear&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,600&family=Borel&family=Lobster&family=Montserrat&family=Neucha&family=Old+Standard+TT:wght@700&family=Preahvihear&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,600&family=Borel&family=Lobster&family=Neucha&family=Old+Standard+TT:wght@700&family=Preahvihear&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Київська обласна дитяча лікарня №2</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css" />
+
+
+</head>
+
+
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class=" header__container container">
+      <div class="header__logo-wrap">
+        <img src="./images/logo.png" alt="logo" class=" header__logo--img">
+      </div>
+
+      <button type="button" class="header__button">
+        <svg width="40" height="40" class="header__icon js-open-menu" aria-expanded="false">
+          <use href="./images/icon.svg#menu"></use>
+        </svg>
+        <svg width="40" height="40" class="header__icon js-close-menu">
+          <use href="./images/icon.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="header__burger js-menu-container">
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link nav__link--current">Головна</a>
+            </li>
+            </li>
+            <li class="nav__item">
+              <a href="./departments.html" class="nav__link link">Відділення стаціонару</a>
+            </li>
+            <li class="nav__item">
+              <a href="./doctors.html" class="nav__link link">Поліклініка</a>
+            </li>
+            <li class="nav__item">
+              <a href="./management.html" class="nav__link link">Керівництво закладу</a>
+            </li>
+            <li class="nav__item">
+              <a href="./vacancies.html" class="nav__link link">Вакансії</a>
+            </li>
+            <li class="nav__item">
+              <a href="./paidService.html" class="nav__link link">Платні послуги</a>
+            </li>
+            <li class="nav__item">
+              <!-- <a href="./news.html" class="nav__link link">Новини</a>  -->
+            </li>
+            </li>
+
+            <li class="nav__item">
+              <!-- <a href="./vacancies.html" class="nav__link link">Контакти</a> -->
+            </li>
+
+
+
+
+
+
+
+          </ul>
+        </nav>
+
+        <ul class="social-burger list">
+
+          <li class="social-burger__item">
+            <svg width="10px" height="10px">
+              <use href="./images/icon.svg#icon-instagram" style="fill: #757575"></use>
+            </svg>
+            <a href="" class="social-burger__link link">Instagram</a>
+          </li>
+          <li class="social-burger__item">
+            <svg width="10px" height="10px">
+              <use href="./images/icon.svg#icon-twitter" style="fill: #757575"></use>
+            </svg>
+            <a href="" class="social-burger__link link">Twitter</a>
+          </li>
+          <li class="social-burger__item">
+            <svg width="10px" height="10px">
+              <use href="./images/icon.svg#icon-facebook" style="fill: #757575"></use>
+            </svg>
+            <a href="" class="social-burger__link link">Facebook</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- головна сторінка -->
+  <main class="main">
+    <section class="hero">
+      <div class="wrap">
+        <h1 class="hero__title">Територія здорового дитинства</h1>
+
+      </div>
+    </section>
+
+    <!-- Statistics  -->
+    <section class="statistics">
+      <ul class="statistics__list container">
+        <li class="statistics__item">
+          <div class="statistics__wrap">
+            <div class="statistics__num">2008</div>
+            <div class="statistics__text">Дата заснування</div>
+          </div>
+        </li>
+        <li class="statistics__item">
+          <div class="statistics__wrap">
+            <div class="statistics__num">+50 000</div>
+            <div class="statistics__text">Вилікуваних дітей</div>
+          </div>
+        </li>
+        <li class="statistics__item">
+          <div class="statistics__wrap">
+            <div class="statistics__num">+40</div>
+            <div class="statistics__text">Лікарів</div>
+          </div>
+        </li>
+        <li class="statistics__item">
+          <div class="statistics__wrap">
+            <div class="statistics__num">6</div>
+            <div class="statistics__text">Відділень</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Info  -->
+    <section class="info">
+      <div class="container">
+        <h3 class="info__title">Контакна Інформація</h3>
+        <div class="info__wrap">
+          <ul class="info__list">
+
+            <li class="info__item" id="workHours">
+              <p class="info__name">Графік Роботи</p>
+              <a href="./contants.html" class="info__link">
+                <svg class="info__icon" width="100" height="100">
+                  <use href="./images/svg/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </a>
+              <p class="info__description">
+                8:00 - 16:00
+              </p>
+              <p class="info__description">
+                Стаціонар 24/7
+              </p>
+            </li>
+
+            <li class="info__item" id="location">
+              <p class="info__name">Локація</p>
+              <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A8%D0%BE%D0%BB%D0%BE%D0%BC-%D0%90%D0%BB%D0%B5%D0%B9%D1%85%D0%B5%D0%BC%D0%B0,+46,+%D0%91%D1%96%D0%BB%D0%B0+%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0,+%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB.,+09100/@49.7907398,30.1263525,17z/data=!3m1!4b1!4m5!3m4!1s0x40d342033c4cab13:0xe44612821b60b0a3!8m2!3d49.7907398!4d30.1263525?entry=ttu"
+                target="_blank" class="info__link">
+                <svg class="info__icon" width="100" height="100">
+                  <use href="./images/svg/symbol-defs.svg#icon-location2"></use>
+                </svg>
+              </a>
+              <p class="info__description">
+                м.Біла Церквa, вулиця Шолом-Алейхема 46
+              </p>
+            </li>
+
+            <li class="info__item" id="call">
+              <p class="info__name">Зв'язок</p>
+
+              <a href="tel:+380456353674" class="info__link">
+                <svg class="info__icon" width="100" height="100">
+                  <use href="./images/svg/symbol-defs.svg#icon-phone2"></use>
+                </svg>
+              </a>
+              <p class="info__description">
+                045-63-5-36-74
+              </p>
+              <p class="info__description">
+                099-262-28-52
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Menegment  -->
+
+
+    <!-- Public information -->
+    <section class="public">
+      <div class="container">
+        <h3 class="public__title">Публічна інформація</h3>
+        <ul class="public__list">
+          <li class="public__item" id="nszu">
+            <svg class="public__icon">
+              <use href="./images/publicInformation/publicSprt.svg#coloboration"></use>
+            </svg>
+            <p class="public__name">Cпівпраця з НСЗУ</p>
+          </li>
+          <li class="public__item" id="pills">
+            <svg class="public__icon">
+              <use href="./images/publicInformation/publicSprt.svg#pill"></use>
+            </svg>
+            <p class="public__name">Наявність ліків</p>
+          </li>
+          <li class="public__item" id="money">
+            <svg class="public__icon">
+              <use href="./images/publicInformation/publicSprt.svg#money"></use>
+            </svg>
+            <p class="public__name">Фінансова звітність</p>
+
+          </li>
+        </ul>
+
+
+      </div>
+    </section>
+
+    <!-- About  -->
+    <section class="about">
+      <div class="container">
+        <h3 class="about__title">Про Лікарню</h3>
+        <div class="about__wrap">
+          <div class="about__text-box">
+            <p class="about__text">Київська обласна дитяча лікарня надає багатопрофільну високоспеціалізовану медичну
+              допомогу хворим дітям,
+              що потребують спеціальних методів діагностики та лікування. За свою піввікову історію лікарня стала одним
+              з провідних медичних закладів охорони здоров’я Київщини.</p>
+            <p class="about__text">Лікарня має сучасну лікувально-діагностичну базу для надання якісної медичної
+              допомоги при захворюваннях
+              хірургічного, неврологічного, кардіологічного, ендокринного, інфекційного та інших профілів. Окрім
+              планового стаціонарного лікування в лікарні організовано надання екстреної медичної допомоги дітям в
+              невідкладних станах.</p>
+            <p class="about__text">Лікарня є медичним закладом вищого рівня акредитації.
+              Лікарня має сертифікат ISO 9001:2015 та відповідає національним стандартам ДСТУ ISO 9001:2015 «Система
+              управління якістю» у сфері охорони здоров’я.</p>
+            <p class="about__text">Лікарня співпрацює з клінічними кафедрами Національного університету охорони
+              здоров’я України ім.
+              П.Л.Шупика, Національного медичного університету ім. О.О.Богомольця, ДУ «Інститут педіатрії, акушерства та
+              гінекології ім. акад. О.М.Лук’янової НАМН України», НДСЛ </p>
+          </div>
+          <div class="about__foto"><img src="./images/pediatria2.png" alt="foto"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Comforts  -->
+    <section class="comforts ">
+
+      <div class="container">
+        <h3 class="comforts__title">Зручності для відвідувачів</h3>
+        <div class="comforts__list ">
+          <div class="comforts__box">
+            <div class="comforts__item">
+              <svg class="comforts__icon">
+                <use href="./images/comforts/comforts-sprt.svg#playroom"></use>
+              </svg>
+              <p class="comforts__name">Ігрові кімнати</p>
+
+              <div class="comforts__overlay">
+                <p class="comforts__overlay--description">
+                  В кожному відділені стаціонару є ігрова кімната
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="comforts__box">
+            <div class="comforts__item">
+              <svg class="comforts__icon">
+                <use href="./images/comforts/comforts-sprt.svg#parking"></use>
+              </svg>
+              <p class="comforts__name">Парковка</p>
+
+              <div class="comforts__overlay">
+                <p class="comforts__overlay--description">
+                  Спеціально відведені місця для паркування перед лікарнею.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="comforts__box">
+            <div class="comforts__item">
+              <svg class="comforts__icon">
+                <use href="./images/comforts/comforts-sprt.svg#playground"></use>
+              </svg>
+              <p class="comforts__name">Майданчик</p>
+
+              <div class="comforts__overlay">
+                <p class="comforts__overlay--description">
+                  У внутрішнюму дворі є ігровий майданчик для наймолодших відвідувачів.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comforts__box">
+            <div class="comforts__item">
+              <svg class="comforts__icon">
+                <use href="./images/comforts/comforts-sprt.svg#disability"></use>
+              </svg>
+              <p class="comforts__name">Інклюзивність</p>
+
+              <div class="comforts__overlay">
+                <p class="comforts__overlay--description">
+                  Лікарня доброзичлива і облаштована для людей з обмеженими
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Fonds -->
+
+    <section class="fonds">
+      <div class="container">
+        <h1 class="fonds__title">наші партнери
+        </h1>
+
+        <ul class="fonds__list">
+          <li class="fonds__item">
+            <div class="fonds__thumb">
+              <a href="https://www.zdorovi.help/" target="_blank" class="fonds__link">
+                <img src="./images/BF-zdorovi.jpg" alt="" class="fonds__img">
+              </a>
+            </div>
+
+          </li>
+          <li class="fonds__item">
+            <div class="fonds__thumb">
+              <a href="https://www.zdorovi.help/" target="_blank" class="fonds__link">
+                <img src="./images/BF-zdorovi.jpg" alt="" class="fonds__img">
+              </a>
+            </div>
+
+          </li>
+          <li class="fonds__item">
+            <div class="fonds__thumb">
+              <a href="https://www.zdorovi.help/" target="_blank" class="fonds__link">
+                <img src="./images/BF-zdorovi.jpg" alt="" class="fonds__img">
+              </a>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <!-- a.footer__logo -->
+          <div class="footer__logo">
+            <a class="" href="#">
+              <img class="footer__logo-img" src="./images/logo-min.png" alt="logo">
+            </a>
+          </div>
+
+          <div class="footer__location">
+            <div class="footer__address">
+              <!-- <h3 class="footer__title">Контакти:</h3> -->
+              <ul class="footer__address-list">
+                <li class="footer__address-item">
+                  <a href="#" class="footer__address-link">
+                    <svg class="footer__address-icon" id="svg" width="20px" height="20px">
+                      <use href="./images/icon.svg#icon-medecine-centre"></use>
+                    </svg>
+                    КНП КОР "Київська обласна дитяча лікарня №2
+                  </a>
+                </li>
+                <li class="footer__address-item">
+                  <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A8%D0%BE%D0%BB%D0%BE%D0%BC-%D0%90%D0%BB%D0%B5%D0%B9%D1%85%D0%B5%D0%BC%D0%B0,+46,+%D0%91%D1%96%D0%BB%D0%B0+%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%90,+%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB.,+09100/@49.7907432,30.1237776,17z/data=!3m1!4b1!4m5!3m4!1s0x40d342033c4cab13:0xe44612821b60b0a3!8m2!3d49.7907398!4d30.1263525?entry=ttu"
+                    target="_blank" class="footer__address-link">
+                    <svg class="footer__address-icon" id="svg" width="20px" height="20px">
+                      <use href="./images/icon.svg#icon-location"></use>
+                    </svg>
+                    м.Біла Церква Шолом-Алейхема 46
+                  </a>
+                </li>
+
+                <li class="footer__address-item">
+                  <a href="mailto:knpkor_kodl2@ukr.net" class="footer__address-link">
+                    <svg class="footer__address-icon" width="20" height="16">
+                      <use href="./images/icon.svg#icon-envelope"></use>
+                    </svg>knpkor_kodl2@ukr.net</a>
+                </li>
+
+
+
+                <li class="footer__address-item">
+                  <a href="tel:+380456353674" class="footer__address-link">
+                    <svg class="footer__address-icon" width="21.5" height="20">
+                      <use href="./images/icon.svg#icon-smartphone"></use>
+                    </svg>045-63-5-36-74</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__socials">
+
+            <h3 class="footer__social-title">Приєднуйтесь</h3>
+
+
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="">
+                  <svg class="footer__social-icon" id="svg" width="20px" height="20px">
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="">
+                  <svg class="footer__social-icon" id="svg" width="20px" height="20px">
+                    <use href="./images/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="">
+                  <svg class="footer__social-icon" id="svg" width="20px" height="20px">
+                    <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+    </footer>
+
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/info.js" type="module"></script>
+    <script src="./js/publicInformation.js" type="module"></script>
+
+
+
+
+</body>
+
+</html>

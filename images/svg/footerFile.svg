@@ -1,0 +1,10 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-location" viewBox="0 0 32 32">
+<path d="M16 3c-5.5 0-10 4.5-10 10 0 8.4 9 15.5 9.4 15.8 0.2 0.1 0.4 0.2 0.6 0.2s0.4-0.1 0.6-0.2c0.4-0.3 9.4-7.4 9.4-15.8 0-5.5-4.5-10-10-10zM16 17c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+</symbol>
+<symbol id="icon-medecine-centre" viewBox="0 0 32 32">
+<path d="M16 0l-15.5 8.667v23.333h12.5v-9.098h6v9.098h12.5v-23.333l-15.5-8.667zM8.217 25.887h-2.504v-2.985h2.504v2.985zM8.217 19.262h-2.504v-2.985h2.504v2.985zM17.252 19.262h-2.504v-2.985h2.504v2.985zM19.916 10.426h-2.518v2.518h-2.797v-2.518h-2.518v-2.798h2.518v-2.519h2.797v2.519h2.518v2.798zM23.778 16.276h2.348v2.985h-2.348v-2.985zM26.287 25.887h-2.504v-2.985h2.504v2.985z"></path>
+</symbol>
+</defs>
+</svg>

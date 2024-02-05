@@ -1,0 +1,64 @@
+.doctors {
+    padding: 0 0 35px 0;
+}
+
+.border {
+    border: 4px solid #099d9b;
+    border-radius: 20px;
+
+    @include mobileMax {
+        padding: 15px 10px 15px 10px
+    }
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 3px;
+
+    @include tablet {
+        justify-content: center;
+        column-gap: 8px;
+        row-gap: 5px;
+    }
+
+    @include desktop {
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+
+    &__button {
+        cursor: pointer;
+        @include font(14px, 900, 1.9, 0.05em);
+        background-color: transparent;
+        border: 1.5px solid #009292;
+        border-radius: 5px;
+        color: #009292;
+        padding: 3px 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        @include tablet {
+            padding: 3px 10px;
+
+        }
+
+        @include desktop {
+            @include font(18px, 900, 1.4, 0.05em);
+
+        }
+
+        &:hover {
+            background-image: radial-gradient(circle, #26c0b4, #1db4ac, #13a9a3, #099d9b, #009292);
+            color: white;
+
+
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            transition: background-image $duration $timing-function,
+                color $duration $timing-function,
+                box-shadow $duration $timing-function,
+        }
+
+
+    }
+}

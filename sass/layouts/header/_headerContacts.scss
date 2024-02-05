@@ -1,0 +1,121 @@
+.contacts-header {
+	display: flex;
+
+	display: flex;
+
+	text-decoration: none;
+	color: #757575;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: #26c0b4;
+	}
+
+	@include mobileMax {
+		flex-direction: column-reverse;
+		margin-top: auto;
+	}
+
+	@include tabletMax {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: auto;
+	}
+
+	@include desktop {
+		margin-left: auto;
+	}
+
+	&__icon {
+		@include mobileMax {
+			display: none;
+		}
+
+		margin-right: 10px;
+		fill: currentColor;
+	}
+
+	&__item {
+		@include mobileMax {
+			&:not(:last-child) {
+				margin-top: 12px;
+			}
+		}
+
+		@include tabletMax {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@include desktop {
+			&:not(:last-child) {
+				margin-right: 50px;
+			}
+		}
+	}
+
+	&__link {
+		@include font(12px, 400, 1, 0.02em);
+		color: #757575;
+
+		font-family: "Raleway", sans-serif;
+
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: $color-secondary-text;
+		transition: color $duration $timing-function;
+
+		@include tablet {
+			@include font(12px, 500, 1.2, 0.02em);
+
+			&:hover,
+			&:focus {
+				color: $color-accent;
+			}
+		}
+		@include desktop {
+			@include font(14px, 500, 1.2, 0.02em);
+		}
+	}
+
+	&__link[href^="tel"] {
+		@include mobileMax {
+			@include font(18px, 500, 1.2, 0.02em);
+			color: #26c0b4;
+			font-family: monospace;
+		}
+	}
+}
+
+// .contacts-header
+
+// .contacts-header__link {
+// 	@include font(16px, 500, 1.2, 0.02em);
+// 	@media screen and (max-width: 820px) {
+// 		@include font(10px, 400, 1, 0.02em);
+// 		color: #757575;
+// 	}
+// }
+
+// .contacts-header__link[href^="tel"] {
+// 	@media screen and (max-width: 820px) {
+// 		@include font(18px, 500, 1.2, 0.02em);
+// 		color: #26c0b4;
+// 		font-family: monospace;
+// 	}
+// }
+
+.contacts-header__icon--mail {
+	margin-right: 4px;
+	margin-left: 10px;
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+	@include tablet {
+		// display: none;
+	}
+}
